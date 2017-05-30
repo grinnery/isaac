@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  achmed:
+    image: grin/isaac
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - lecrypt:/etc/letsencrypt
+    environment:
+      - FQDN=${FQDN}
+      - EMAIL=${EMAIL}
+      - OAUTH2_PROXY_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - OAUTH2_PROXY_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+volumes:
+  lecrypt:
