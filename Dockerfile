@@ -1,5 +1,5 @@
 FROM grin/abraham
-MAINTAINER And Grin <a@grin.ly>
+LABEL maintainer="And Grin <a@grin.ly>"
 
 # download the oauth2_proxy v.2.2
 ARG OAUTH_URL=https://github.com/bitly/oauth2_proxy/releases/download/v2.2/oauth2_proxy-2.2.0.linux-amd64.go1.8.1.tar.gz
