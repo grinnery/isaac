@@ -1,4 +1,4 @@
-# nginx + certbot + oauth2_proxy
+# nginx + certbot + oauth2_proxy  ![](https://img.shields.io/docker/build/grin/isaac.svg)
 
 Google oauth secrets configured in `.env` file or passed through environment.
 
